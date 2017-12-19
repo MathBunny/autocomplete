@@ -7,6 +7,7 @@ The purpose of this repository is to provide a quick implementation for autocomp
 #include "autocomplete.h"
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
