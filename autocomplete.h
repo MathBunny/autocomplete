@@ -8,6 +8,7 @@
 
 class AutoComplete{
     std::unique_ptr<Trie> trie;
+    bool isCaseInsensitive;
 
    public:
     void addToWordset(std::vector<std::string> wordset);
@@ -15,6 +16,7 @@ class AutoComplete{
     bool canResolve(std::string str);
     std::string resolveString(std::string str);
     std::vector<std::string> getSuggestions(std::string str);
-    AutoComplete(std::vector<std::string> type);
+    AutoComplete(std::vector<std::string> type, bool isCaseInsensitive = false);
+    AutoComplete(bool isCaseInsensitive = false);
 };
 #endif

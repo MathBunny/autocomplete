@@ -3,3 +3,4 @@
 *.d
 Makefile
 testrunner.cc
+autocomplete
